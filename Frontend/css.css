@@ -1,0 +1,145 @@
+/* ------------------------Navbar styling------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+/* Logo styling */
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(40, 55, 121);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.navbar .nav-links{
+    margin-right: 20px;
+}
+
+/* Nav links styling */
+.navbar .nav-links a {
+    color: rgb(40, 55, 121);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Hover effect for links */
+.navbar .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(40, 55, 121);
+}
+
+/* Responsive navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .nav-links a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* ------------------------Navbar styling------------------------------- */
+
+/* ------------------------Hero styling------------------------------- */
+/* Set up full-height hero section with background image */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('Images/bg\ image.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+/* Hero section content layout */
+.hero-content {
+    max-width: 50%;
+    padding: 20px;
+    z-index: 5;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(40, 55, 121);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero image styling */
+.hero-image {
+    max-width: 36%;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    z-index: 5;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px; /* Account for navbar height */
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+}
