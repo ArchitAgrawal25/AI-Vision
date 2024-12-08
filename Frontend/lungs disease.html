@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lung Disease Detection Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .form-group {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lung Disease Detection</h1>
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="0">0 (Female)</option>
+          <option value="1">1 (Male)</option>
+        </select>
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required>
+      </div>
+
+      <!-- Smoking -->
+      <div class="form-group">
+        <label for="smoking">Smoking</label>
+        <select id="smoking" name="smoking" required>
+          <option value="">Select</option>
+          <option value="0">0 (Non-smoker)</option>
+          <option value="1">1 (Smoker)</option>
+        </select>
+      </div>
+
+      <!-- Fatigue -->
+      <div class="form-group">
+        <label for="fatigue">Fatigue</label>
+        <select id="fatigue" name="fatigue" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Wheezing -->
+      <div class="form-group">
+        <label for="wheezing">Wheezing</label>
+        <select id="wheezing" name="wheezing" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Coughing -->
+      <div class="form-group">
+        <label for="coughing">Coughing</label>
+        <select id="coughing" name="coughing" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Shortness of Breath -->
+      <div class="form-group">
+        <label for="shortnessOfBreath">Shortness of Breath</label>
+        <select id="shortnessOfBreath" name="shortnessOfBreath" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Swallowing Difficulty -->
+      <div class="form-group">
+        <label for="swallowingDifficulty">Swallowing Difficulty</label>
+        <select id="swallowingDifficulty" name="swallowingDifficulty" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Chest Pain -->
+      <div class="form-group">
+        <label for="chestPain">Chest Pain</label>
+        <select id="chestPain" name="chestPain" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <!-- Chronic Disease -->
+      <div class="form-group">
+        <label for="chronicDisease">Chronic Disease</label>
+        <select id="chronicDisease" name="chronicDisease" required>
+          <option value="">Select</option>
+          <option value="0">0 (No)</option>
+          <option value="1">1 (Yes)</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Detection Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .form-group {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    select, input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>COVID-19 Detection</h1>
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- Dynamic Fields -->
+      <div class="form-group">
+        <label for="breathingProblem">Breathing Problem</label>
+        <select id="breathingProblem" name="breathingProblem" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fever">Fever</label>
+        <select id="fever" name="fever" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dryCough">Dry Cough</label>
+        <select id="dryCough" name="dryCough" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="soreThroat">Sore Throat</label>
+        <select id="soreThroat" name="soreThroat" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="runningNose">Running Nose</label>
+        <select id="runningNose" name="runningNose" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="asthma">Asthma</label>
+        <select id="asthma" name="asthma" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="chronicLungDisease">Chronic Lung Disease</label>
+        <select id="chronicLungDisease" name="chronicLungDisease" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="headache">Headache</label>
+        <select id="headache" name="headache" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="heartDisease">Heart Disease</label>
+        <select id="heartDisease" name="heartDisease" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="diabetes">Diabetes</label>
+        <select id="diabetes" name="diabetes" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="hypertension">Hyper Tension</label>
+        <select id="hypertension" name="hypertension" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fatigue">Fatigue</label>
+        <select id="fatigue" name="fatigue" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="gastrointestinal">Gastrointestinal</label>
+        <select id="gastrointestinal" name="gastrointestinal" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="abroadTravel">Abroad Travel</label>
+        <select id="abroadTravel" name="abroadTravel" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="contactWithCovid">Contact with COVID Patient</label>
+        <select id="contactWithCovid" name="contactWithCovid" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="largeGathering">Attended Large Gathering</label>
+        <select id="largeGathering" name="largeGathering" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="publicPlaces">Visited Public Exposed Places</label>
+        <select id="publicPlaces" name="publicPlaces" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="familyExposed">Family working in Public Exposed Places</label>
+        <select id="familyExposed" name="familyExposed" required>
+          <option value="">Select</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Detection Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .form-group {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Diabetes Detection</h1>
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- Pregnancies -->
+      <div class="form-group">
+        <label for="pregnancies">Pregnancies</label>
+        <input type="number" id="pregnancies" name="pregnancies" placeholder="Enter number of pregnancies" required>
+      </div>
+
+      <!-- Glucose -->
+      <div class="form-group">
+        <label for="glucose">Glucose</label>
+        <input type="number" id="glucose" name="glucose" placeholder="Enter glucose level" required>
+      </div>
+
+      <!-- Blood Pressure -->
+      <div class="form-group">
+        <label for="bloodPressure">Blood Pressure</label>
+        <input type="number" id="bloodPressure" name="bloodPressure" placeholder="Enter blood pressure" required>
+      </div>
+
+      <!-- Skin Thickness -->
+      <div class="form-group">
+        <label for="skinThickness">Skin Thickness</label>
+        <input type="number" id="skinThickness" name="skinThickness" placeholder="Enter skin thickness" required>
+      </div>
+
+      <!-- Insulin -->
+      <div class="form-group">
+        <label for="insulin">Insulin</label>
+        <input type="number" id="insulin" name="insulin" placeholder="Enter insulin level" required>
+      </div>
+
+      <!-- BMI -->
+      <div class="form-group">
+        <label for="bmi">BMI</label>
+        <input type="number" step="0.1" id="bmi" name="bmi" placeholder="Enter BMI value" required>
+      </div>
+
+      <!-- Diabetes Pedigree Function -->
+      <div class="form-group">
+        <label for="diabetesPedigreeFunction">Diabetes Pedigree Function</label>
+        <input type="number" step="0.01" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction" placeholder="Enter diabetes pedigree function" required>
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
