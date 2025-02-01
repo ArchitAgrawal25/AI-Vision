@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Vision | Home</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -25,13 +25,13 @@
             <a href="#services" class="cta-btn">Get Started</a>
         </div>
         <div class="hero-image">
-            <img src="Images/img3.jpg" alt="AI-Vision Illustration">
+            <img src="static/Images/img3.jpg" alt="AI-Vision Illustration">
         </div>
     </section>
 
     <section class="about-us" id="aboutus">
         <div class="about-image">
-            <img src="Images/img2.jpg" alt="About Us Image">
+            <img src="static/Images/img2.jpg" alt="About Us Image">
         </div>
         <div class="about-content">
             <h2>About AI-Vision</h2>
@@ -43,24 +43,24 @@
     <section class="services" id="services">
         <h2 class="services-heading">Our Services</h2>
         <div class="services-grid">
-            <a href="heart disease.html"><div class="service-box">
-                <img src="Images/heart.avif" alt="Heart Model">
+            <a href="{{ url_for('heart_disease') }}"><div class="service-box">
+                <img src="static/Images/heart.avif" alt="Heart Model">
                 <p>Heart Disease Detection</p>
             </div></a>
-            <a href="covid disease.html"> <div class="service-box">
-                <img src="Images/covid.avif" alt="Covid Model">
+            <a href="{{ url_for('covid_disease') }}"> <div class="service-box">
+                <img src="static/Images/covid.avif" alt="Covid Model">
                 <p>Covid Detection</p>
             </div></a>
-            <a href="diabetes disease.html"><div class="service-box">
-                <img src="Images/diabetes.png" alt="Diabetes Model">
+            <a href="{{ url_for('diabetes_disease') }}"><div class="service-box">
+                <img src="static/Images/diabetes.png" alt="Diabetes Model">
                 <p>Diabetes Analysis</p>
             </div></a>
-            <a href="lungs disease.html"><div class="service-box">
-                <img src="Images/lung.avif" alt="Lung Model">
+            <a href="{{ url_for('lungs_disease') }}"><div class="service-box">
+                <img src="static/Images/lung.avif" alt="Lung Model">
                 <p>Lung Health Detection</p>
             </div></a>
-            <a href="parkinson's disease.html"><div class="service-box">
-                <img src="Images/parkinson.jpeg" alt="Parkinson Model">
+            <a href="{{ url_for('parkinsons_disease') }}"><div class="service-box">
+                <img src="static/Images/parkinson.jpeg" alt="Parkinson Model">
                 <p>Parkinson Detection</p>
             </div></a>
         </div>
@@ -68,7 +68,7 @@
 
     <section class="ai-healthcare" id="healthcare">
         <div class="ai-image">
-            <img src="Images/ai health.webp" alt="AI in Healthcare">
+            <img src="static/Images/ai health.webp" alt="AI in Healthcare">
         </div>
         <div class="ai-content">
             <h2>AI Transforming Healthcare</h2>
@@ -120,10 +120,10 @@
             <!-- Social Media Section -->
             <div class="footer-social">
                 <h3>Follow Us</h3>
-                <a href="#"><img src="Images/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="Images/github-sign.png" alt="Github"></a>
-                <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="static/Images/github-sign.png" alt="Github"></a>
+                <a href="#"><img src="static/Images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="static/Images/instagram.png" alt="Instagram"></a>
             </div>
         </div>
     
